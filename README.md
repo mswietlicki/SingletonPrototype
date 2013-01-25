@@ -1,4 +1,4 @@
-SingletonPrototype
+﻿SingletonPrototype
 =================
 
 This is simple inheritable C# singleton implementation.
@@ -8,7 +8,7 @@ Take a closer look at SingletonBase and the fact that static property instance i
 Developers
 ----------
 
-Mateusz �wietlicki
+Mateusz Świetlicki
 http://mateusz.swietlicki.net
 
 Copyright and license
