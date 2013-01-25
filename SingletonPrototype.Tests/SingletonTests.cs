@@ -16,5 +16,23 @@ namespace SingletonPrototype.Tests
 
             Assert.AreEqual(aa.Print(), "A");
         }
+
+        [TestMethod]
+        public void SomeBaseTest()
+        {
+            SomeChild.StaticValue = 3;
+            Assert.AreEqual(SomeChild.StaticValue, 3);
+
+            SomeOtherChild.StaticValue = 5;
+            Assert.AreEqual(SomeOtherChild.StaticValue, 5);
+
+            Assert.AreEqual(SomeChild.StaticValue, 3);
+
+            //But if SomeThirdChild and SomeChild are the same type;
+            SomeThirdChild.StaticValue = 10;
+            Assert.AreEqual(SomeThirdChild.StaticValue, 10);
+
+            Assert.AreEqual(SomeChild.StaticValue, 10);
+        }
     }
 }
